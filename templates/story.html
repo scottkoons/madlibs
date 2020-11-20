@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Mad Libs Story!{% endblock %}
+
+{% block content %}
+<img src="static/ml_log.png" alt="Madlibs ml_log" width="500px">
+
+<h1>Here is your Madlib Story...</h1>
+<h4 style="margin-top: 30px; color: dimgrey;">There was once a marvelous {{place}} where all the {{noun}} came to
+    {{verb}}. But one day,
+    a {{adj}}
+    cow came and
+    ate all of the {{plural}}! And that's the whole story.</h4>
+<p><a href="/">home</a></p>
+
+{% endblock %}

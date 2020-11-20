@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Mad Libs!{% endblock %}
+
+{% block content %}
+<img src="static/ml_log.png" alt="Madlibs ml_log" width="500px">
+
+<form action="/story" class="form-input">
+    <h1 class="h3 mb-3 font-weight-normal">Enter your words below</h1>
+
+    <input type="text" id="input-place" class="form-control mt-3" placeholder="Place (i.e. house, condo, boat...)"
+        name="place" required autofocus>
+    <input type="text" id="input-noun" class="form-control mt-3" placeholder="Noun (i.e. dragon, unicorn, car...)"
+        name="noun" required>
+    <input type="text" id="input-verb" class="form-control mt-3" placeholder="Verb (i.e. run, walk, eat...)" name="verb"
+        required autofocus>
+    <input type="text" id="input-adj" class="form-control mt-3" placeholder="Adjective (i.e. frozen, pretty, huge...)"
+        name="adj" required autofocus>
+    <input type="text" id="input-plural" class="form-control mt-3"
+        placeholder="Plural Noun (i.e. cows, people, dogs...)" name="plural" required autofocus>
+
+    <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">Submit</button>
+</form>
+
+{% endblock %}
